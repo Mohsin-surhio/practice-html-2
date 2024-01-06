@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>PAGE 2</h1>
+    <a href="index.html">HOME</a>
+    <div class="container">
+    <h1 class="main-heading">Payment form</h1>
+    <h2>Personal Information</h2>
+    <p>required fields are followed by *</p>
+    <div> Name : * <input type="text" name="name" placeholder="Name" required></div>
+    <fieldset>
+        <legend>Gender *</legend>
+        <p>Male <input type="radio" name="gender" id="male" required>Female <input type="radio" name="gender" id="female" required>
+        Other <input type="radio" name="gender" id="Other" required>
+        </p>
+    </fieldset>
+    <p>Address : <textarea name="Address" id="Address" cols="106" rows="5" placeholder="Address"></textarea></p>
+    <p>Card Number : * <input type="number" name="namber" id="namber" placeholder="Card Number" required></p>
+    <p>Expire Dare : * <input type="date" name="date" id="date" required></p>
+    <p>Email : * <input type="email" name="email" id="email" placeholder="Email" required></p>
+    <p>Pincode : * <input type="number" name="number" id="number" placeholder="Pincode" required></p>
+    <h2>Payment Information</h2>
+    <p>Card type : *
+        <select name="card_type" id="card_type" required>
+            <option value="">--Select a card type--</option>
+            <option value="visa">Visa</option>
+            <option value="master card">Master card</option>
+            <option value="paypak">PayPak</option>
+        </select>
+    </p>
+    <p>CVV : * <input type="password" name="password" id="password" placeholder="password" required></p>
+    <input type="submit" value="Pay Now">
+</div>
+
+
+</body>
+</html>
